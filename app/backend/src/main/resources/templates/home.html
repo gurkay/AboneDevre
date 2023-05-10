@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-
-    <title>Home</title>
-
-
-</head>
+<head th:replace="~{fragments/header_fragment :: page_head('Home - Backend Page', 'none')}" ></head>
 
 
 <body>
 
-    <h2>Home Page</h2>
+    <div class="container-fluid">
+        <div th:replace="~{fragments/navigation_fragment :: menu}"></div>
+        <div>
+            <h2>Control Panel</h2>
+
+        </div>
+    </div>
+   
+    <div th:replace="~{fragments/footer_fragment :: footer}"></div>
 
 </body>
 
